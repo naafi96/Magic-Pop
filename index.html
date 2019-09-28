@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 
+	AUTHOR		:	ABDUL WAHID NAAFI
+  INSTAGRAM	:	@IAM_NAAFI
+  INSTAGRAM : @WEB.IO
+	-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="authBox dispflexcenter">
+	<div class="loginBox boxinner" id="loginBox">
+		<section class="authboxTitle">L O G I N</section>
+		<form>
+			<input type="text" name="username" placeholder="Username" />
+			<input type="password" name="password" placeholder="Password" />
+			<input type="submit" value="L o g i n" />
+		</form>
+		<div class="switch" onclick="showsignup();">New User ? Sign Up</div>
+	</div>
+	<div class="signupBox boxinner" id="signupBox">
+		<section class="authboxTitle">S I G N  U P</section>
+		<form>
+			<input type="email" name="email" placeholder="E-mail" />
+			<input type="text" name="username" placeholder="Username" />
+			<input type="password" name="password" placeholder="Password" />
+			<input type="submit" value="Create Account" />
+		</form>
+		<div class="switch" onclick="showlogin();">Already registered ? Login</div>
+	</div>
+	
+</div>
+<script type="text/javascript">
+	//AUTHOR		:	ABDUL WAHID NAAFI
+//INSTAGRAM	:	@IAM_NAAFI
+//INSTAGRAM : @WEB.IO
+var LoginBox=document.getElementById('loginBox');
+	var SignupBox=document.getElementById('signupBox');
+	function showsignup()
+	{
+		LoginBox.className="loginBox boxinner gosmall";
+		SignupBox.className="signupBox boxinner gobluranimation ontop";
+	}
+	function showlogin()
+	{
+		LoginBox.className="loginBox  boxinner gobluranimation ontop ";
+		SignupBox.className="signupBox  boxinner gosmall";
+	}
+</script>
+</body>
+</html>
